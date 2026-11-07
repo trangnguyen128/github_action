@@ -81,9 +81,6 @@ jobs:
 
             - name: Send mail
               uses: dawidd6/action-send-mail@v23
-              env:
-                # Optional proxy, NO_PROXY is honored too:
-                SMTP_PROXY: http://proxy.example.test:3128
               with:
                 server_address: smtp.gmail.com
                 server_port: 465

@@ -30,7 +30,7 @@ jobs:
         runs-on: ubuntu-latest
 
         outputs:
-            job_build_status: ${{ steps.build.outputs.status }}
+            job_build_status: ${{ steps.output.outputs.status }}
 
         steps:
              - name: output

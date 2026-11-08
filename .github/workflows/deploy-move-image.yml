@@ -123,8 +123,8 @@ jobs:
                 server_address: smtp.gmail.com
                 server_port: 465
                 secure: true
-                username: trangnguyen128ss@gmail.com
-                password: tmybfonyybyrgkcp
+                username: ${{ secrets.EMAIL_USER }}
+                password: ${{ secrets.EMAIL_PASS }}
                 subject: Github Actions job result
                 to: trangnguyen128ss@gmail.com
                 from: 'Trang Nguyen <trangnguyen128ss@gmail.com'

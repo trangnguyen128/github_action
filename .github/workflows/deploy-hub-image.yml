@@ -61,7 +61,7 @@ jobs:
                 ssh_ip: ${{ secrets.SSH_IP }}
 
           - name: Build Image Docker
-            run: docker build -t go_gin_be_img . 
+            run: docker build -t $IMAGE_NAME . 
 
           - name: Docker Login
             run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}

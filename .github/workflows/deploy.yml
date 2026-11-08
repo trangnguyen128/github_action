@@ -85,7 +85,7 @@ jobs:
                     set -e
 
                     cd $COMPOSE_FILE_DIR
-                    docker-compose up -d --force-recreate $COMPOSE_SERVICE
+                    docker compose up -d --force-recreate $COMPOSE_SERVICE
                 "
 
     # job_notify:

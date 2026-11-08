@@ -1,5 +1,5 @@
 name: Common 
-
+description: Common
 inputs:
   ssh_key:
     required: true
@@ -19,4 +19,5 @@ runs:
         ssh-private-key: ${{ inputs.ssh_key }}
       
     - name: Trust Host
+      shell: bash
       run: ssh-keyscan -H ${{ inputs.ssh_ip }} >> ~/.ssh/known_hosts

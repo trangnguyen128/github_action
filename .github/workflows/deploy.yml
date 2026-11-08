@@ -79,7 +79,7 @@ jobs:
                 ssh_key: ${{ secrets.SSH_KEY }}
                 ssh_ip: ${{ secrets.SSH_IP }}
 
-          - name: Build Image Docker
+          - name: Run New Image
             run: |
                 ssh $SSH_SERVER "
                     set -e

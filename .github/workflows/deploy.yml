@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  SSH_SERVER: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}
+  SSH_SERVER: ${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }}
   WORK_DIR: /home/ubuntu/devops_05/go_gin_be
   COMPOSE_FILE_DIR: /home/ubuntu/devops_05
 
